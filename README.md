@@ -22,7 +22,7 @@ Presenter ->> View: asks the view to present the state
 
 ```
 
-
+![app architecture](https://github.com/norsez/FIRChat/blob/master/seqdiag.PNG?raw=true)
 
 ### Scenes
 
