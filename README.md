@@ -1,1 +1,37 @@
 # FIRChat
+
+A sample iOS serverless chat app that uses Firebase Database as the sole backend.
+
+
+
+## Overview
+
+The app is written with VIP clean architecture in mind in order to keep a one-way app flow.
+
+
+
+### A Scene
+
+```mermaid
+sequenceDiagram
+View ->> Interacter: user initiates an action
+Interacter ->> FIR: triggers change in Firebase Database
+FIR ->> Interacter: updates status with observer
+Interacter ->> Presenter: asks to present a new state
+Presenter ->> View: asks the view to present the state
+
+```
+
+
+
+### Scenes
+
+Each scene follows the above app flow. Each scene is represeted with its corresponding View (ViewController), interacter and presenter. There are two scenes in this project sample.
+
+- Users 
+  - shows who's online
+  - allows user to select a conversation partner
+- Conversations
+  - allows chatting with the selected conversation parter
+  - displays chat history
+
