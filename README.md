@@ -40,7 +40,12 @@ Each scene follows the above app flow. Each scene is represeted with its corresp
 In order to run this sample project, you need to
 
 - setup your Firebase free account
-
 - create a Firebase app project 
-
 - match the app bundle name of this sample project to your newly created Firebase app project
+
+
+
+### How to run 
+
+- Run a `pod install`in the sample project folder
+- run FIRChat in Xcode 
